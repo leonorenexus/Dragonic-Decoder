@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Dragonic Decoder</string>
+    <string name="app_tagline">CYBERPUNK DECODE ENGINE</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_analyzer">Analyzer</string>
+    <string name="nav_downloads">Downloads</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home -->
+    <string name="input_data">INPUT DATA</string>
+    <string name="hint_input">Enter text or upload file to decode…</string>
+    <string name="btn_paste">PASTE</string>
+    <string name="btn_upload_file">UPLOAD FILE</string>
+    <string name="btn_decode">▶  DECODE</string>
+    <string name="quick_tools">QUICK TOOLS</string>
+    <string name="view_all">View All</string>
+
+    <!-- Decoder Types -->
+    <string name="base64">Base64</string>
+    <string name="base32">Base32</string>
+    <string name="base16">Base16 (Hex)</string>
+    <string name="base58">Base58</string>
+    <string name="hex">Hex</string>
+    <string name="url">URL</string>
+    <string name="jwt">JWT</string>
+    <string name="unicode">Unicode</string>
+    <string name="html_entity">HTML Entity</string>
+    <string name="binary">Binary</string>
+    <string name="octal">Octal</string>
+    <string name="rot13">ROT13</string>
+    <string name="caesar">Caesar Cipher</string>
+    <string name="decode">Decode</string>
+    <string name="encode">Encode</string>
+    <string name="encode_decode">Encode / Decode</string>
+
+    <!-- Result -->
+    <string name="output">OUTPUT</string>
+    <string name="decoded">DECODED</string>
+    <string name="information">INFORMATION</string>
+    <string name="btn_copy">COPY</string>
+    <string name="btn_share">SHARE</string>
+    <string name="btn_save">SAVE</string>
+    <string name="encoding_type">Encoding</string>
+    <string name="decoded_chars">Decoded Characters</string>
+    <string name="time_taken">Time</string>
+
+    <!-- History -->
+    <string name="search_history">Search history…</string>
+    <string name="no_history">No decode history yet</string>
+    <string name="export_history">Export History</string>
+
+    <!-- Analyzer -->
+    <string name="analyzer">ANALYZER</string>
+    <string name="file_analysis">FILE ANALYSIS</string>
+    <string name="detection_result">DETECTION RESULT</string>
+    <string name="content_preview">CONTENT PREVIEW</string>
+    <string name="file_type">File Type</string>
+    <string name="encoding">Encoding</string>
+    <string name="possible_type">Possible Type</string>
+    <string name="entropy">Entropy</string>
+    <string name="lines">Lines</string>
+    <string name="characters">Characters</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="btn_decode_file">▶  DECODE THIS FILE</string>
+
+    <!-- Workflow / History -->
+    <string name="workflow_status">WORKFLOW STATUS</string>
+    <string name="total_runs">Total\nRuns</string>
+    <string name="success">SUCCESS</string>
+    <string name="failed">FAILED</string>
+    <string name="running">RUNNING</string>
+    <string name="recent_workflows">RECENT WORKFLOWS</string>
+
+    <!-- Downloads -->
+    <string name="downloads">DOWNLOADS</string>
+    <string name="search_files">Search files…</string>
+    <string name="no_downloads">No saved files yet</string>
+
+    <!-- Settings -->
+    <string name="settings">SETTINGS</string>
+    <string name="general">GENERAL</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="auto_save">Auto Save</string>
+    <string name="save_history">Save History</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="language">Language</string>
+    <string name="system_default">System Default</string>
+    <string name="data">DATA</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_downloads">Clear Downloads</string>
+    <string name="reset_settings">Reset All Settings</string>
+    <string name="about">ABOUT</string>
+    <string name="app_version">App Version</string>
+    <string name="developer">Developer</string>
+    <string name="developer_name">Leonore Tech Team</string>
+    <string name="about_app">About Dragonic Decoder</string>
+    <string name="version">1.0.0</string>
+
+    <!-- All Tools -->
+    <string name="all_tools">ALL TOOLS</string>
+    <string name="search_tools">Search tools…</string>
+    <string name="encoder_decoder">ENCODER / DECODER</string>
+    <string name="tab_all">ALL</string>
+    <string name="tab_encoder">ENCODER</string>
+    <string name="tab_decoder">DECODER</string>
+    <string name="tab_analyzer">ANALYZER</string>
+    <string name="tab_converter">CONVERTER</string>
+
+    <!-- Toasts / Messages -->
+    <string name="copied_clipboard">Copied to clipboard!</string>
+    <string name="saved_success">File saved successfully!</string>
+    <string name="decode_success">Decoded successfully!</string>
+    <string name="decode_error">Decode error: invalid input</string>
+    <string name="paste_from_clipboard">Pasted from clipboard</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="confirm_clear">Are you sure?</string>
+    <string name="confirm_clear_msg">This action cannot be undone.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="ms_suffix">ms</string>
+</resources>

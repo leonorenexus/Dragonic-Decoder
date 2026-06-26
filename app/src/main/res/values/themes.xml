@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Cyberpunk Theme -->
+    <style name="Theme.DragonicDecoder" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryVariant">@color/neon_blue_dim</item>
+        <item name="colorOnPrimary">@color/cyber_black</item>
+        <item name="colorSecondary">@color/neon_cyan</item>
+        <item name="colorOnSecondary">@color/cyber_black</item>
+        <item name="colorTertiary">@color/neon_purple</item>
+        <item name="colorSurface">@color/cyber_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/cyber_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorBackground">@color/cyber_black</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorError">@color/neon_red</item>
+        <item name="android:colorBackground">@color/cyber_black</item>
+        <item name="android:statusBarColor">@color/cyber_black_deep</item>
+        <item name="android:navigationBarColor">@color/bottom_nav_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="materialButtonStyle">@style/Widget.DragonicDecoder.Button</item>
+        <item name="cardViewStyle">@style/Widget.DragonicDecoder.CardView</item>
+        <item name="bottomNavigationStyle">@style/Widget.DragonicDecoder.BottomNav</item>
+        <item name="textInputStyle">@style/Widget.DragonicDecoder.TextInput</item>
+        <item name="
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.DragonicDecoder.Splash" parent="Theme.DragonicDecoder">
+        <item name="android:statusBarColor">@color/cyber_black_deep</item>
+        <item name="android:navigationBarColor">@color/cyber_black_deep</item>
+    </style>
+
+    <!-- Neon Button Style -->
+    <style name="Widget.DragonicDecoder.Button" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_button_neon</item>
+        <item name="android:textColor">@color/cyber_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="
+        <item name="cornerRadius">8dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Outlined Button Style -->
+    <style name="Widget.DragonicDecoder.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/bg_button_outlined</item>
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="strokeColor">@color/neon_blue</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="
+    </style>
+
+    <!-- CardView Style -->
+    <style name="Widget.DragonicDecoder.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/card_bg</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">@color/card_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="Widget.DragonicDecoder.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/bottom_nav_bg</item>
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="elevation">16dp</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.DragonicDecoder.BottomNav.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.DragonicDecoder.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/neon_blue_dark</item>
+    </style>
+
+    <!-- TextInput Style -->
+    <style name="Widget.DragonicDecoder.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/card_bg</item>
+        <item name="boxStrokeColor">@color/border_neon</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+    <!-- Tool Chip Style -->
+    <style name="Widget.DragonicDecoder.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="chipBackgroundColor">@color/cyber_surface</item>
+        <item name="chipStrokeColor">@color/border_neon</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+
+    <!-- Status Bar Badge -->
+    <style name="Widget.DragonicDecoder.Badge.Success">
+        <item name="android:background">@drawable/bg_badge_success</item>
+        <item name="android:textColor">@color/status_success</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.DragonicDecoder.Badge.Failed">
+        <item name="android:background">@drawable/bg_badge_failed</item>
+        <item name="android:textColor">@color/status_failed</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.DragonicDecoder.Badge.Running">
+        <item name="android:background">@drawable/bg_badge_running</item>
+        <item name="android:textColor">@color/status_running</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>
