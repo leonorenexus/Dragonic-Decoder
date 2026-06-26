@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dragonic.decoder.ui.home.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.dragonic.decoder.ui.history.HistoryFragment"
+        android:label="History" />
+
+    <fragment
+        android:id="@+id/analyzerFragment"
+        android:name="com.dragonic.decoder.ui.analyzer.AnalyzerFragment"
+        android:label="Analyzer" />
+
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.dragonic.decoder.ui.downloads.DownloadsFragment"
+        android:label="Downloads" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.dragonic.decoder.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>
