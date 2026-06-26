@@ -1,0 +1,72 @@
+package com.dragonic.decoder.data.repository
+
+import android.content.Context
+import androidx.lifecycle.LiveData
+import com.dragonic.decoder.data.db.AppDatabase
+import com.dragonic.decoder.data.db.HistoryEntry
+import com.dragonic.decoder.data.db.SavedFile
+import com.dragonic.decoder.utils.FileUtils
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+class DecoderRepository(private val context: Context) {
+
+    private val db = AppDatabase.getDatabase(context)
+    private val historyDao = db.historyDao()
+    private val savedFileDao = db.savedFileDao()
+
+    // --- History ---
+    fun getAllHistory(): LiveData<List<HistoryEntry>> = historyDao.getAllHistory()
+
+    fun searchHistory(query: String): LiveData<List<HistoryEntry>> =
+        historyDao.searchHistory(query)
+
+    suspend fun insertHistory(entry: HistoryEntry): Long =
+        withContext(Dispatchers.IO) { historyDao.insertHistory(entry) }
+
+    suspend fun deleteHistory(entry: HistoryEntry) =
+        withContext(Dispatchers.IO) { historyDao.deleteHistory(entry) }
+
+    suspend fun clearAllHistory() =
+        withContext(Dispatchers.IO) { historyDao.clearAllHistory() }
+
+    suspend fun getHistoryStats(): Triple<Int, Int, Int> = withContext(Dispatchers.IO) {
+        Triple(
+            historyDao.getTotalCount(),
+            historyDao.getSuccessCount(),
+            historyDao.getFailedCount()
+        )
+    }
+
+    // --- Saved Files ---
+    fun getAllFiles(): LiveData<List<SavedFile>> = savedFileDao.getAllFiles()
+
+    fun searchFiles(query: String): LiveData<List<SavedFile>> =
+        savedFileDao.searchFiles(query)
+
+    suspend fun insertFile(file: SavedFile): Long =
+        withContext(Dispatchers.IO) { savedFileDao.insertFile(file) }
+
+    suspend fun deleteFile(file: SavedFile) =
+        withContext(Dispatchers.IO) { savedFileDao.deleteFile(file) }
+
+    suspend fun clearAllFiles() =
+        withContext(Dispatchers.IO) { savedFileDao.clearAllFiles() }
+
+    // --- Save decoded result to disk ---
+    suspend fun saveDecodedResult(
+        content: String,
+        encodingType: String,
+        extension: String = "txt"
+    ): SavedFile? = withContext(Dispatchers.IO) {
+        val file = FileUtils.saveToFile(context, content, encodingType, extension) ?: return@withContext null
+        val savedFile = SavedFile(
+            fileName = file.name,
+            filePath = file.absolutePath,
+            fileSize = file.length(),
+            encodingType = encodingType
+        )
+        savedFileDao.insertFile(savedFile)
+        savedFile
+    }
+}
