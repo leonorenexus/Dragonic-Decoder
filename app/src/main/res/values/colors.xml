@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyberpunk Core Colors -->
+    <color name="cyber_black">#050A0F</color>
+    <color name="cyber_black_deep">#020508</color>
+    <color name="cyber_surface">#0A1628</color>
+    <color name="cyber_surface_variant">#0D1F3C</color>
+    <color name="cyber_surface_elevated">#112244</color>
+
+    <!-- Neon Blue Primary -->
+    <color name="neon_blue">#00D4FF</color>
+    <color name="neon_blue_bright">#00FFFF</color>
+    <color name="neon_blue_dim">#0088CC</color>
+    <color name="neon_blue_dark">#003366</color>
+    <color name="neon_blue_ultra">#1AEBFF</color>
+
+    <!-- Neon Accents -->
+    <color name="neon_cyan">#00FFF5</color>
+    <color name="neon_teal">#00E5CC</color>
+    <color name="neon_purple">#7B2FFF</color>
+    <color name="neon_green">#00FF88</color>
+    <color name="neon_red">#FF2244</color>
+    <color name="neon_yellow">#FFD700</color>
+    <color name="neon_orange">#FF6600</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#00FF88</color>
+    <color name="status_failed">#FF2244</color>
+    <color name="status_running">#FFD700</color>
+    <color name="status_pending">#888888</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#E8F4FD</color>
+    <color name="text_secondary">#8BAFC8</color>
+    <color name="text_tertiary">#4A6B8A</color>
+    <color name="text_disabled">#2A3D52</color>
+    <color name="text_neon">#00D4FF</color>
+
+    <!-- Border / Divider Colors -->
+    <color name="border_neon">#1A4A6E</color>
+    <color name="border_glow">#00D4FF40</color>
+    <color name="divider">#0D2A40</color>
+
+    <!-- Glassmorphism -->
+    <color name="glass_bg">#0A1628CC</color>
+    <color name="glass_border">#00D4FF33</color>
+
+    <!-- Gradient Start/End -->
+    <color name="grad_start">#00D4FF</color>
+    <color name="grad_end">#0066FF</color>
+    <color name="grad_button_start">#00AAFF</color>
+    <color name="grad_button_end">#0044CC</color>
+
+    <!-- Card backgrounds -->
+    <color name="card_bg">#081525</color>
+    <color name="card_bg_elevated">#0C1E35</color>
+    <color name="card_border">#1A3A5C</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_bg">#060E1A</color>
+    <color name="bottom_nav_selected">#00D4FF</color>
+    <color name="bottom_nav_unselected">#3A5C78</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#CC000000</color>
+
+    <!-- Base encoder type colors -->
+    <color name="color_base64">#00D4FF</color>
+    <color name="color_base32">#00AAFF</color>
+    <color name="color_hex">#7B2FFF</color>
+    <color name="color_url">#00FF88</color>
+    <color name="color_jwt">#FFD700</color>
+    <color name="color_unicode">#FF6600</color>
+    <color name="color_binary">#00FFF5</color>
+    <color name="color_rot13">#FF2244</color>
+    <color name="color_html">#00E5CC</color>
+    <color name="color_octal">#7B2FFF</color>
+</resources>
