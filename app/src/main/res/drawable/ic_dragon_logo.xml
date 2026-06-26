@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#1A00D4FF"
+        android:pathData="M100,5 C48.2,5 5,48.2 5,100 C5,151.8 48.2,195 100,195 C151.8,195 195,151.8 195,100 C195,48.2 151.8,5 100,5Z"/>
+    <!-- Circle border -->
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M100,15 C53.7,15 15,53.7 15,100 C15,146.3 53.7,185 100,185 C146.3,185 185,146.3 185,100 C185,53.7 146.3,15 100,15Z"/>
+    <!-- Dragon head base -->
+    <path
+        android:fillColor="#0055AA"
+        android:pathData="M100,35 C82,35 68,48 64,62 C60,76 64,86 70,95 C76,104 78,108 77,118 C76,128 70,133 71,143 C72,153 83,160 100,160 C117,160 128,153 129,143 C130,133 124,128 123,118 C122,108 124,104 130,95 C136,86 140,76 136,62 C132,48 118,35 100,35Z"/>
+    <!-- Dragon head highlight -->
+    <path
+        android:fillColor="#0088DD"
+        android:pathData="M86,40 C79,44 74,52 72,60 C70,68 74,74 82,76 C90,78 110,78 118,76 C126,74 130,68 128,60 C126,52 121,44 114,40 C107,36 93,36 86,40Z"/>
+    <!-- Left eye -->
+    <path android:fillColor="#00EEFF" android:pathData="M88,55 C88,50 93,47 88,55Z"/>
+    <ellipse android:fillColor="#00FFFF" android:cx="88" android:cy="56" android:rx="5" android:ry="5.5"/>
+    <ellipse android:fillColor="#001133" android:cx="88" android:cy="56" android:rx="3" android:ry="3.5"/>
+    <ellipse android:fillColor="#FFFFFF" android:cx="89.5" android:cy="54.5" android:rx="1" android:ry="1"/>
+    <!-- Right eye -->
+    <ellipse android:fillColor="#00FFFF" android:cx="112" android:cy="56" android:rx="5" android:ry="5.5"/>
+    <ellipse android:fillColor="#001133" android:cx="112" android:cy="56" android:rx="3" android:ry="3.5"/>
+    <ellipse android:fillColor="#FFFFFF" android:cx="113.5" android:cy="54.5" android:rx="1" android:ry="1"/>
+    <!-- Nose -->
+    <path android:fillColor="#0044AA" android:pathData="M97,68 L100,72 L103,68 Q100,66 97,68Z"/>
+    <!-- Left wing -->
+    <path
+        android:fillColor="#0044BB"
+        android:alpha="0.85"
+        android:pathData="M70,95 C58,88 38,84 27,94 C18,102 22,118 34,123 C46,128 65,120 70,108Z"/>
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"
+        android:pathData="M70,95 C58,88 38,84 27,94 C18,102 22,118 34,123 C46,128 65,120 70,108Z"/>
+    <!-- Right wing -->
+    <path
+        android:fillColor="#0044BB"
+        android:alpha="0.85"
+        android:pathData="M130,95 C142,88 162,84 173,94 C182,102 178,118 166,123 C154,128 135,120 130,108Z"/>
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"
+        android:pathData="M130,95 C142,88 162,84 173,94 C182,102 178,118 166,123 C154,128 135,120 130,108Z"/>
+    <!-- Scales row 1 -->
+    <path android:fillColor="#0066CC" android:pathData="M92,88 Q100,84 108,88 Q100,93 92,88Z"/>
+    <!-- Scales row 2 -->
+    <path android:fillColor="#0066CC" android:pathData="M90,103 Q100,99 110,103 Q100,108 90,103Z"/>
+    <!-- Scales row 3 -->
+    <path android:fillColor="#0066CC" android:pathData="M92,118 Q100,114 108,118 Q100,123 92,118Z"/>
+    <!-- Tail tip -->
+    <path
+        android:fillColor="#0055AA"
+        android:pathData="M97,155 Q100,165 103,155 Q100,160 97,155Z"/>
+    <!-- Neon glow dots around circle -->
+    <ellipse android:fillColor="#00D4FF" android:cx="100" android:cy="17" android:rx="2" android:ry="2"/>
+    <ellipse android:fillColor="#00D4FF" android:cx="183" android:cy="100" android:rx="2" android:ry="2"/>
+    <ellipse android:fillColor="#00D4FF" android:cx="100" android:cy="183" android:rx="2" android:ry="2"/>
+    <ellipse android:fillColor="#00D4FF" android:cx="17" android:cy="100" android:rx="2" android:ry="2"/>
+</vector>
